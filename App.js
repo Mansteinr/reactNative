@@ -26,17 +26,14 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App:() => React$Node = () => {
+import LKText from './components/LKText'
+
+const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.mainViewStyle}>
-        <Text> 
-          当前屏幕高度：{Dimensions.get('window').height + '\n'}
-          当前屏幕宽度：{Dimensions.get('window').width + '\n'}
-          当前屏幕分辨率：{Dimensions.get('window').scale + '\n'}
-          当前操作系统：{Platform.OS}
-        </Text>
+        <LKText />
       </SafeAreaView>
     </>
   );

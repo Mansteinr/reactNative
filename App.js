@@ -27,13 +27,15 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import LKText from './components/LKText'
+import LKImage from './components/LKImage'
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.mainViewStyle}>
-        <LKText />
+        <LKImage />
+        {/* <LKText /> */}
       </SafeAreaView>
     </>
   );

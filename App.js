@@ -29,14 +29,14 @@ import {
 // import LKText from './components/LKText'
 // import LKImage from './components/LKImage'
 // import LKImageDemo from './components/LKImageDemo'
-import LKTextInput from './components/LKTextInput'
+import LKButton from './components/LKButton'
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.mainViewStyle}>
-        <LKTextInput />
+        <LKButton />
         {/* <LKText /> */}
       </SafeAreaView>
     </>

@@ -28,7 +28,7 @@ export default class LKTextInput extends Component {
           placeholder="请输入密码"
           placeholderTextColor="red"
           clearButtonMode="while-editing"
-          onChangeText={(text) => {
+          onChangeText={(text) => { // 双向数据绑定
             this.setState({
               inputValue: text
             })

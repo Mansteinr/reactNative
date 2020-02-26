@@ -26,15 +26,16 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import LKText from './components/LKText'
-import LKImage from './components/LKImage'
+// import LKText from './components/LKText'
+// import LKImage from './components/LKImage'
+import LKImageDemo from './components/LKImageDemo'
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.mainViewStyle}>
-        <LKImage />
+        <LKImageDemo />
         {/* <LKText /> */}
       </SafeAreaView>
     </>
@@ -44,10 +45,10 @@ const App: () => React$Node = () => {
 const styles = StyleSheet.create({
   mainViewStyle: {
     flex: 1,
-    backgroundColor: 'red',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center'
+    backgroundColor: 'cyan',
+    // flexDirection: 'row',
+    // justifyContent: 'center',
+    // alignItems: 'center'
   },
 });
 

@@ -1,41 +1,46 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 export default class LKText extends Component {
   constructor() {
     super();
-    this.state = {
-      name: '韩梅梅',
-      info: '喜欢周明晔',
-    };
   }
   render () {
-    const {name, info} = this.state;
     return (
-      <View>
-        <Text style={[styles.mainTitleStyle, styles.commonStyle]}>{name}</Text>
-        <Text style={[styles.subTitleStyle, styles.commonStyle]}>{info}</Text>
-        <Text style={{fontSize: 50, color: 'green'}}>
-          {/* 子可以继承父的样式 父不能是view */}
-          <Text>{name}</Text>
-          <Text>{info}</Text>
-        </Text>
+      <View style={styles.container}>
+        <View style={styles.topViewStyle}>
+          <TouchableOpacity
+            style={styles.clikBtnStyle}
+          >
+            <Text style={{color: '#fff'}}>添加文本</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[styles.clikBtnStyle, { backgroundColor: 'red', marginLeft: 10 }]}
+          >
+            <Text style={{color: '#fff'}}>删除文本</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  mainTitleStyle: {
-    fontSize: 30,
-    color: 'cyan',
+  container: {
+    flex: 1,
+    backgroundColor: 'cyan'
   },
-  subTitleStyle: {
-    fontSize: 20,
-    color: '#fff',
+  topViewStyle: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: 10
   },
-  commonStyle: {
-    // 公共样式
-    fontWeight: 'bold',
+  clikBtnStyle: {
+    width: 120,
+    height: 40,
+    borderRadius: 10,
+    backgroundColor: 'green',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
 });

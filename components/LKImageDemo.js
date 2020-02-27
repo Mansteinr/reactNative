@@ -1,9 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
 import {
-  View, Image, Text, StyleSheet, ImageBackground,
+  View, Image, Text, StyleSheet, TouchableOpacity,
   Dimensions
 } from 'react-native';
+
+const { width, height } =  Dimensions.get('window')
+
 export default class LKImageDemo extends Component {
   constructor() {
     super();

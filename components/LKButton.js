@@ -24,7 +24,7 @@ export default class LKButton extends Component {
         <TouchableOpacity
           style={styles.BtnStyle}
           onPress={() => { 
-            alert('已经登录')
+            alert('TouchableOpacity')
             }} 
         >
           <Text style={{fontSize: 20, color: 'green'}}>注册账号</Text>

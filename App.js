@@ -29,15 +29,16 @@ import {
 // import LKText from './components/LKText'
 // import LKImage from './components/LKImage'
 // import LKImageDemo from './components/LKImageDemo'
-import LKButton from './components/LKButton'
+// import LKButton from './components/LKButton'
+import LKFlexDemo from './components/LKFlexDemo'
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.mainViewStyle}>
-        <LKButton />
         {/* <LKText /> */}
+        <LKFlexDemo />
       </SafeAreaView>
     </>
   );

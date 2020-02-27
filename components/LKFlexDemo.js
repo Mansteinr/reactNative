@@ -6,16 +6,17 @@ import {
   Image,
   Dimensions,
   StyleSheet,
+  Switch,
   TouchableOpacity
 } from 'react-native';
 
-const { width, height } = Dimensions.get('window'),
-      dataArr = require('./../assets/localData/data.json')
-export default class LKText extends Component {
+const { width, height } = Dimensions.get('window')
+export default class LKFlexDemo extends Component {
   constructor() {
     super();
     this.state = {
-      shopArr: []
+      shopArr: [],
+      on: true
     }
   }
 
@@ -36,6 +37,7 @@ export default class LKText extends Component {
           >
             <Text style={{color: '#fff'}}>删除文本</Text>
           </TouchableOpacity>
+          <Switch value={this.state.on} onValueChange={this.change}/>
         </View>
         <View style={styles.bottomViewStyle}>
           { this.state.shopArr }
@@ -44,6 +46,11 @@ export default class LKText extends Component {
     )
   }
 
+  change = () => {
+    this.setState({
+      on: !this.state.on
+    })
+  }
      // 添加商品
      addShop = () => {
        let cols = 3, shopW = 100, shopH = 120, //每个盒子的宽高

@@ -30,7 +30,8 @@ import {
 // import LKImage from './components/LKImage'
 // import LKImageDemo from './components/LKImageDemo'
 // import LKButton from './components/LKButton'
-import LKFlexDemo from './components/LKFlexDemo'
+import LKScrollView from './components/LKScrollView'
+// import LKFlexDemo from './components/LKFlexDemo'
 
 const App: () => React$Node = () => {
   return (
@@ -38,7 +39,7 @@ const App: () => React$Node = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.mainViewStyle}>
         {/* <LKText /> */}
-        <LKFlexDemo />
+        <LKScrollView />
       </SafeAreaView>
     </>
   );

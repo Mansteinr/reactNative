@@ -25,21 +25,28 @@ export default class SwiperComponent extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  wrapper: {},
+  slide1: {
     flex: 1,
-    backgroundColor: 'cyan'
-  },
-  topViewStyle: {
-    flexDirection: 'row',
     justifyContent: 'center',
-    marginTop: 10
+    alignItems: 'center',
+    backgroundColor: '#9DD6EB'
   },
-  clikBtnStyle: {
-    width: 120,
-    height: 40,
-    borderRadius: 10,
-    backgroundColor: 'green',
+  slide2: {
+    flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: '#97CAE5'
   },
-});
+  slide3: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#92BBD9'
+  },
+  text: {
+    color: '#fff',
+    fontSize: 30,
+    fontWeight: 'bold'
+  }
+})

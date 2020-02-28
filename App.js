@@ -10,12 +10,7 @@ import React from 'react';
 import {
   SafeAreaView,
   StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  Dimensions,
-  Platform,
+  StatusBar
 } from 'react-native';
 
 import {
@@ -38,7 +33,7 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.mainViewStyle}>
-        {/* <LKText /> */}
+        {/* <LKFlexDemo /> */}
         <LKScrollView />
       </SafeAreaView>
     </>
@@ -47,11 +42,8 @@ const App: () => React$Node = () => {
 
 const styles = StyleSheet.create({
   mainViewStyle: {
-    // flex: 1,
-    // backgroundColor: 'cyan',
-    // flexDirection: 'row',
-    // justifyContent: 'center',
-    // alignItems: 'center'
+    flex: 1,
+    backgroundColor: 'cyan'
   },
 });
 

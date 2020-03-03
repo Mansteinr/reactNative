@@ -21,24 +21,26 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import LKRefresh from './components/LKRefresh'
+import LKFlatList from './components/LKFlatList'
 
 const App: () => React$Node = () => {
-  return (
+  return ( 
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={styles.mainViewStyle}>
-        <LKRefresh />
-      </SafeAreaView>
+      <StatusBar barStyle = "dark-content" />
+      <SafeAreaView style = {
+        styles.mainViewStyle
+      }>
+      <LKFlatList />
+        </SafeAreaView>
     </>
   );
 };
 
 const styles = StyleSheet.create({
   mainViewStyle: {
-    flex: 1,
-    backgroundColor: 'cyan'
+    flex: 1
   },
 });
 
 export default App;
+
